@@ -1,57 +1,54 @@
-# Exercice d'entretien technique - Data Scientist Finance
+# Cas pratique - Data Scientist Finance
 
-## Contexte métier
+Vous allez travailler sur un mini-cas de notation crédit. Le but n'est pas de produire le meilleur modèle possible en 15 minutes, mais de montrer comment vous réfléchissez face à un jeu de données imparfait.
 
-Vous travaillez avec une équipe de crédit à la consommation. Le métier souhaite améliorer le processus d'analyse des demandes de prêt en identifiant les clients susceptibles de faire défaut dans les 90 jours suivant l'approbation du crédit.
+## Situation
 
-Le jeu de données est synthétique. Il représente des demandes de prêt avec des informations de profil client, d'historique de crédit, de caractéristiques du prêt et de canal de demande.
+Une équipe de crédit à la consommation veut mieux identifier les demandes de prêt qui risquent de faire défaut dans les 90 jours suivant l'approbation.
 
-Votre objectif n'est pas de construire un modèle parfait. L'objectif est de montrer votre raisonnement sur la qualité des données, la disponibilité des variables, la stratégie de validation, l'évaluation du modèle et l'interprétation métier.
+Vous disposez d'un jeu de données synthétique contenant des informations sur les clients, les demandes de prêt, l'historique crédit et le canal de souscription.
 
-## Temps prévu
+Comme dans un vrai projet, les données ne sont pas parfaitement propres. Certaines valeurs peuvent manquer, certaines lignes peuvent être douteuses, et toutes les variables ne sont pas forcément utilisables telles quelles.
 
-Temps total d'entretien : 30 minutes.
+## Temps
 
-- 15 minutes : travail individuel sur le jeu de données.
-- 15 minutes : discussion technique à partir de votre approche.
+L'entretien dure 30 minutes :
 
-Vous n'êtes pas censé tout terminer. Priorisez un raisonnement clair et expliquez vos arbitrages.
+- 15 minutes pour explorer le jeu de données et préparer votre approche ;
+- 15 minutes pour discuter de vos choix techniques et métier.
 
-## Consignes candidat
+Vous n'avez pas besoin de tout finir. Une analyse claire, structurée et honnête vaut mieux qu'un modèle complexe construit trop vite.
 
-1. Générer le jeu de données s'il n'est pas déjà présent :
+## Ce que vous pouvez faire
 
-   ```powershell
-   python generate_dataset.py
-   ```
+Commencez par ouvrir `candidate_notebook.ipynb`, puis avancez dans les sections proposées :
 
-2. Ouvrir le carnet Jupyter `candidate_notebook.ipynb`.
-3. Parcourir les sections dans l'ordre :
-   - Chargement des données
-   - EDA rapide
-   - Contrôles de qualité des données
-   - Construction de variables
-   - Proposition de modèle
-   - Évaluation
-   - Interprétation métier
-4. Vous pouvez utiliser toute approche Python standard avec les packages listés dans `requirements.txt`.
+- chargement des données ;
+- exploration rapide ;
+- contrôles de qualité ;
+- construction de variables ;
+- proposition de modèle ;
+- choix des métriques ;
+- interprétation métier.
 
-## Livrables attendus
+Si vous avez le temps, vous pouvez entraîner un modèle simple de départ. Sinon, expliquez clairement ce que vous feriez et pourquoi.
 
-Pendant l'entretien, soyez prêt à expliquer :
+## Ce qu'on attend surtout
 
-- Ce que vous avez vérifié en premier et pourquoi.
-- Les problèmes de qualité de données identifiés.
-- Les variables que vous utiliseriez ou excluriez, y compris les variables suspectes.
-- Une approche de modélisation raisonnable.
-- La métrique qui compte le plus et pourquoi.
-- Comment expliquer les résultats à des interlocuteurs crédit risque, produit ou conformité.
-- Comment passer d'un carnet Jupyter à une mise en production.
+Pendant la discussion, soyez prêt à expliquer :
 
-## Règles
+- les premiers contrôles que vous avez faits ;
+- les problèmes de qualité de données repérés ;
+- les variables que vous utiliseriez, excluriez ou vérifieriez davantage ;
+- le type de modèle que vous choisiriez en premier ;
+- les métriques adaptées à un problème de défaut rare ;
+- la manière d'expliquer un refus de crédit à un interlocuteur non technique ;
+- les grandes étapes pour passer d'un carnet Jupyter à une mise en production.
 
-- Aucune donnée réelle n'est utilisée dans cet exercice.
-- L'accès internet n'est pas nécessaire.
-- Un modèle de référence simple suffit.
-- Une analyse partielle avec un raisonnement solide vaut mieux qu'un modèle complexe fait trop vite.
-- Ne supposez pas que toutes les colonnes sont utilisables. Identifiez et justifiez les variables potentiellement problématiques.
+## Règles du jeu
+
+- Aucune donnée réelle n'est utilisée.
+- Internet n'est pas nécessaire.
+- Un modèle simple suffit.
+- Le raisonnement compte plus que la performance brute.
+- Ne supposez pas que toutes les colonnes sont disponibles au moment de la décision crédit.

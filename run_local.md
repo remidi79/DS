@@ -1,6 +1,6 @@
-# Lancement local avec Windows PowerShell
+# Lancer l'exercice en local
 
-Depuis le dossier `01_candidate_visible` :
+Depuis Windows PowerShell, placez-vous dans ce dossier puis exécutez :
 
 ```powershell
 python -m venv .venv
@@ -10,11 +10,19 @@ python generate_dataset.py
 jupyter notebook
 ```
 
-Puis ouvrir :
+Ouvrez ensuite :
 
-- `candidate_notebook.ipynb`
+```text
+candidate_notebook.ipynb
+```
 
-Le jeu de données généré sera enregistré ici :
+Le fichier de données est déjà fourni, mais vous pouvez le régénérer avec :
+
+```powershell
+python generate_dataset.py
+```
+
+Il sera créé ici :
 
 ```text
 data/credit_scoring_interview.csv
